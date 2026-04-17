@@ -1,0 +1,12 @@
+[AC][Display]
+	DimDisplayIdleTimeoutSec=900
+	TurnOffDisplayIdleTimeoutSec=1800
+	TurnOffDisplayIdleTimeoutWhenLockedSec=300
+
+[AC][RunScript]
+	IdleTimeoutCommand=sync
+	RunScriptIdleTimeoutSec=1800
+
+[AC][SuspendAndShutdown]
+	AutoSuspendIdleTimeoutSec=1800
+	PowerButtonAction=8

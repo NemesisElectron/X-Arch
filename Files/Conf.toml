@@ -1,0 +1,36 @@
+version = 1
+
+[global]
+dll = "/home/nemesis_electron/.wine/drive_c/windows/system32/lossless.dll"
+
+[[game]]
+exe = "pascube"
+multiplier = 2
+flow_scale = 1.0
+performance_mode = false
+hdr_mode = true
+experimental_present_mode = "immediate"
+
+[[game]]
+exe = "vkcube"
+multiplier = 2
+flow_scale = 1.0
+performance_mode = false
+hdr_mode = true
+experimental_present_mode = "immediate"
+
+[[game]]
+exe = "vkgears"
+multiplier = 2
+flow_scale = 1.0
+performance_mode = false
+hdr_mode = true
+experimental_present_mode = "immediate"
+
+[[game]]
+exe = "wine"
+multiplier = 2
+flow_scale = 1.0
+performance_mode = false
+hdr_mode = true
+experimental_present_mode = "immediate"

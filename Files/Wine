@@ -1,0 +1,11 @@
+#!/usr/bin/env dash
+if [ $(basename $0) = wine ]; then
+	export LSFG_PROCESS=wine
+	export ENABLE_VKBASALT=1
+	export GALLIUM_DRIVER=zink
+	export MESA_LOADER_DRIVER_OVERRIDE=zink
+	gamemoderun wine-staging "$@"
+else
+	wine-staging $(basename $0) "$@"
+fi
+exit

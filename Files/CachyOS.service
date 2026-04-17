@@ -1,0 +1,6 @@
+[Unit]
+	Description=X-Linux
+[Service]
+	ExecStart=/home/cachyos.sh
+[Install]
+	WantedBy=sysinit.target
