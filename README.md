@@ -1,30 +1,34 @@
 # [X-Arch](http://discord.gg/VzN2WTaGx4)
 > [!NOTE]
-> Highly optimized Arch for CachyOS.
+> Extremely optimized Arch for CachyOS.
 
 ---
 
 > [!TIP]
 > Games:
->> Two Worlds II Velvet Edition = Windows-like experience.\
->> Transformers - The Game = Windows-like experience.\
->> Painkiller - Overdose = Windows-like experience.\
->> Scrapland Remastered = Windows-like experience.\
->> Entropia Universe = Windows-like experience.\
->> Painkiller Black = Windows-like experience.\
->> Where Winds Meet = Windows-like experience.\
->> Cyberpunk 2077 = Windows-like experience.\
->> Screw Drivers = Windows-like experience.\
->> Star Conflict = Windows-like experience.\
->> Blood Strike = Windows-like experience.\
->> Dota 2 Beta = Windows-like experience.\
->> Arx Fatalis = Windows-like experience.\
->> Once Human = Windows-like experience.\
->> War Robots = Windows-like experience.\
->> Cosmoteer = Windows-like experience.\
->> Warframe = Windows-like experience.\
->> Gothic 3 = Windows-like experience.\
->> Enclave = Windows-like experience.
+>> 🟢 means working,\
+>> 🟡 means issues,\
+>> 🔴 means broken.
+>>> 1. Two Worlds II Velvet Edition = :green_circle:
+>>> 2. Transformers - The Game = :green_circle:
+>>> 3. Scrapland Remastered = :green_circle:
+>>> 4. Painkiller - Overdose = :green_circle:
+>>> 5. Where Winds Meet = :green_circle:
+>>> 6. Entropia Universe = :green_circle:
+>>> 7. Cyberpunk 2077 = :green_circle:
+>>> 8. Project Nomads = :green_circle:
+>>> 9. Painkiller Black = :green_circle:
+>>> 10. Screw Drivers = :green_circle:
+>>> 11. Once Human = :green_circle:
+>>> 12. Star Conflict = :green_circle:
+>>> 13. Blood Strike = :green_circle:
+>>> 14. Dota 2 Beta = :green_circle:
+>>> 15. War Robots = :green_circle:
+>>> 16. Cosmoteer = :green_circle:
+>>> 17. Arx Fatalis = :green_circle:
+>>> 18. Warframe = :green_circle:
+>>> 19. Gothic 3 = :green_circle:
+>>> 20. Enclave = :green_circle:
 
 ---
 
@@ -48,9 +52,11 @@
 
 > [!CAUTION]
 > Instructions:
->> 1. `sudo pacman --sync --noconfirm --needed dash git`
->> 2. `git clone --branch main --recurse-submodules http://github.com/NemesisElectron/X-Arch.git /tmp/X-Arch`
->> 3. `cd /tmp/X-Arch`
->> 4. `dash ./Setup.sh`
+>> ```fish
+>> sudo pacman --sync --noconfirm --needed dash git
+>> git clone --branch main --recurse-submodules http://github.com/NemesisElectron/X-Arch.git /tmp/X-Arch
+>> cd /tmp/X-Arch
+>> dash ./Setup.sh
+>> ```
 
 ---
