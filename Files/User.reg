@@ -11,6 +11,7 @@ Windows Registry Editor Version 5.00
 [HKey_Current_User\Software\Wine\DirectSound]
 	"EAXEnabled"="Y"
 [HKey_Current_User\Software\Wine\DLLOverrides]
+	"*atiadlxx"=""
 	"*ddraw"="native"
 	"*lossless"="native"
 [HKey_Current_User\Software\Wine\Drivers]
