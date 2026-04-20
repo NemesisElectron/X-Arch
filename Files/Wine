@@ -1,11 +1,10 @@
 #!/usr/bin/env dash
-if [ $(basename $0) = wine ]; then
-	export LSFG_PROCESS=wine
-	export ENABLE_VKBASALT=1
-	export GALLIUM_DRIVER=zink
-	export MESA_LOADER_DRIVER_OVERRIDE=zink
-	gamemoderun wine-staging "$@"
-else
+if [ $(basename $0) != wine ]; then
 	wine-staging $(basename $0) "$@"
+	exit
 fi
+export LSFG_PROCESS=wine
+export LSFGVK_PROFILE=wine
+export VK_INSTANCE_LAYERS=VK_LAYER_LSFGVK_frame_generation:VK_LAYER_VKBASALT_OVERLAY_post_processing:VK_LAYER_MANGOHUD_overlay_x86_64
+gamemoderun wine-staging "$@"
 exit
