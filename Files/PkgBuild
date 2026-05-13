@@ -1,0 +1,15 @@
+pkgname=X-Arch
+pkgdesc="LibDRM, FwGL, GameMode, Mesa, VkLSFG, VkBasalt, MangoHUD."
+pkgver=1.0.0
+pkgrel=1
+arch=(x86_64)
+license=(BSD 3 Clause)
+package() {
+	export DESTDIR=$pkgdir 
+	export LIBS="LibDRM FwGL GameMode Mesa VkLSFG VkBasalt MangoHUD"
+	for DIRECTORY in $LIBS; do
+		ninja install -C /tmp/Builds/"$DIRECTORY"_32 || true
+		ninja install -C /tmp/Builds/"$DIRECTORY"_64 || true
+	done
+	mv --force $DESTDIR/usr/share/vulkan/implicit_layer.d/MangoHud.x86_64.json $DESTDIR/usr/share/vulkan/implicit_layer.d/MangoHud.json || true
+}
