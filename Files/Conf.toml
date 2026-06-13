@@ -1,0 +1,32 @@
+version=2
+[global]
+	dll="/home/nemesis_electron/.wine/drive_c/windows/system32/lossless.dll"
+	allow_fp16=true
+[[profile]]
+	name="wine"
+	active_in="wine"
+	multiplier=2
+	flow_scale=1
+	performance_mode=false
+	pacing="none"
+[[profile]]
+	name="pascube"
+	active_in="pascube"
+	multiplier=2
+	flow_scale=1
+	performance_mode=false
+	pacing="none"
+[[profile]]
+	name="vkcube"
+	active_in="vkcube"
+	multiplier=2
+	flow_scale=1
+	performance_mode=false
+	pacing="none"
+[[profile]]
+	name="vkgears"
+	active_in="vkgears"
+	multiplier=2
+	flow_scale=1
+	performance_mode=false
+	pacing="none"
